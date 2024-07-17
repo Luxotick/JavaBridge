@@ -1,6 +1,6 @@
 use serde::{Deserialize, Serialize};
-use std::io::{self, BufReader, BufWriter};
-use std::fs::{self, File};
+use std::io::{self, BufReader};
+use std::fs::{File};
 
 #[derive(Serialize, Deserialize, Default)]
 pub struct Config {

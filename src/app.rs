@@ -49,15 +49,15 @@ impl MyApp {
 
 impl epi::App for MyApp {
     fn name(&self) -> &str {
-        "Rust Java Launcher"
+        "JavaBridge"
     }
 
-    fn update(&mut self, ctx: &egui::CtxRef, frame: &mut epi::Frame<'_>) {
+    fn update(&mut self, ctx: &egui::CtxRef, _frame: &mut epi::Frame) {
         self.load_java_versions();
 
         egui::TopBottomPanel::top("top_panel").show(ctx, |ui| {
             ui.horizontal(|ui| {
-                ui.label("Rust Java Launcher");
+                ui.label("JavaBridge - made by @Luxotick");
                 ui.with_layout(egui::Layout::right_to_left(), |ui| {
                     if ui.button("⚙").clicked() {
                         self.show_settings = !self.show_settings;
@@ -88,7 +88,7 @@ impl epi::App for MyApp {
                         });
                     });
             } else {
-                if ui.button("Load Java Versions").clicked() {
+                if ui.button("ReLoad Java Versions").clicked() {
                     self.refresh = true;
                     self.load_java_versions();
                 }
