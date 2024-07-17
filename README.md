@@ -20,3 +20,7 @@ cargo build --release
 
 ## Usage
 Double-click the executable file or set the exe file as the default program for JAR files.
+
+## Screenshots
+![image](https://github.com/Luxotick/JavaBridge/blob/main/screenshots/image.jpg?raw=true)
+![image2](https://github.com/Luxotick/JavaBridge/blob/main/screenshots/image2.jpg?raw=true)
