@@ -5,9 +5,8 @@ mod config;
 mod utils;
 
 use app::MyApp;
-use eframe::{egui, epi};
+use eframe::{egui};
 use std::env;
-use utils::{get_java_versions, run_jar_with_java};
 
 fn main() {
     let args: Vec<String> = env::args().collect();
